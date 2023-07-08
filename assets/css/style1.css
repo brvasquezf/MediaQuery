@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+  background-color: #d07614;
+}
+
+menu {
+  grid-area: menu;
+  background-color: #d07614;
+}
+
+main {
+  grid-area: main;
+  background-color: #6d46c7;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #d07614;
+}
+
+/*****************************************************************************************************************************************/
+
+/*Layout Movil*/
+
+@media (max-width: 575px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+
+  /***********************************************************************************************************************************/
+  /* Box Header */
+
+  .box-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+  }
+
+  .box-title img {
+    width: 10%;
+    border-radius: 100%;
+  }
+
+  /***********************************************************************************************************************************/
+
+  /* Box Menu */
+
+  menu {
+    display: none;
+  }
+
+  /***********************************************************************************************************************************/
+
+  /* Box Main */
+
+  .container-box-card {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .box-card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .box-card p {
+    margin: 0;
+    color: white;
+    padding: 10px
+  }
+
+  .box-card button {
+    background-color: royalblue;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+  }
+
+  .box-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: grey 1px solid;
+    background-color: #d07614;
+    box-shadow: 0px 0px 5px 1px black;
+  }
+
+  .box-info-card{
+    display: flex;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.box-btn-next-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  /***********************************************************************************************************************************/
+
+  /* Box Footer*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+  }
+
+  .box-der {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/*****************************************************************************************************************************************/
+
+/* Layout Escritorio */
+
+@media (min-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header main"
+      "menu main"
+      "footer main";
+  }
+
+  /***********************************************************************************************************************************/
+
+  /* Box Header */
+
+  header{
+    width: 20vw;
+    height: 11vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+  }
+
+  .box-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+  }
+
+  .box-title img{
+    width: 30%;
+    border-radius: 100%;
+  }
+
+
+
+  /***********************************************************************************************************************************/
+
+  /*  Box Menu */
+
+  menu{
+    position: absolute;
+    top: 103px;
+    margin: 0;
+    width: 20vw;
+    height: 67vh;
+
+  }
+
+  .box-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+ 
+
+
+
+
+  /***********************************************************************************************************************************/
+
+  /* Box Main */
+
+  main{
+    width: 80vw;
+  }
+
+  .container-box-card{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .box-card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .box-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: grey 1px solid;
+    background-color: #d07614;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 0.255rem;
+  }
+
+  .box-card button {
+    background-color: royalblue;
+    width: 100%;
+    color: white;
+    border-radius: 0.255rem;
+  }
+
+  .container-box-btn-next{
+    display: flex;
+    justify-content: center;
+}
+  }
+
+
+
+  /***********************************************************************************************************************************/
+
+  /* Box Footer*/
+
+  footer{
+    margin: 0;
+    width: 20vw;
+  }
+
+
+
+
+  /***********************************************************************************************************************************/
+
+
+

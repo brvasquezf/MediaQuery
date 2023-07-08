@@ -1,0 +1,121 @@
+********************************************************************************************/
+
+/* Body */
+
+body{
+    margin: 0;
+}
+
+/*********************************************************************************************/
+
+/*Container*/
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header menu"
+    "header main"
+    "footer main";
+
+    }
+
+/*********************************************************************************************/
+
+/* Header */
+
+header {
+    grid-area: header;
+    background-color: rgb(83, 83, 136);
+    width: 20vw;
+    padding-left: 5px;
+
+}
+
+.box-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-title img{
+    width: 75px;
+    border-radius: 100%;
+}
+
+.box-title h3{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+/*********************************************************************************************/
+
+/* Menu */
+
+menu {
+    margin: 0;
+    grid-area: menu;
+    background-color: rgb(9, 9, 83);
+    width: 80vw;
+}
+
+/*********************************************************************************************/
+
+/* Main */
+
+main {
+    grid-area: main;
+    background-color: rgb(102, 255, 186);
+    width: 80vw;
+}
+
+/*********************************************************************************************/
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+    background-color: rgb(255, 102, 102);
+    width: 20vw;
+    padding-left: 5px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.box-der{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*********************************************************************************************/
+
+
+/* @media (min-width: 576px) {
+    main {
+        background-color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        background-color: red;
+    }
+}
