@@ -230,12 +230,12 @@ footer {
 
   .container-box-card{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "card card card"
-        "card card card"
-        "card card card";
+        "card card card card"
+        "card card card card"
+        "card card card card";
     height: 85vh;
     overflow-y: scroll;
     gap: 20px;
